@@ -10,7 +10,6 @@ terraform {
   }
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-0230bd60aa48260c6"
-  instance_type = "t2.micro"
+resource "aws_sqs_queue" "terraform-gh-demo" {
+  name = "terraform-gh-demo"
 }
